@@ -1,0 +1,18 @@
+# AICUP 2026 桌球擊球預測 — 最終提交環境 (Public LB 0.4225088)
+# Python 3.11.9  (Windows 11, `py` launcher)
+# 訓練一律使用 GPU: NVIDIA GeForce RTX 4090 24GB, CUDA 12.1
+# 版本皆為本機核實 (pip freeze 對應值)
+
+numpy==2.4.3
+pandas==2.3.3
+scipy==1.17.1            # Nelder-Mead blend (scipy.optimize.minimize), bootstrap CI
+scikit-learn==1.6.1      # GroupKFold / StratifiedGroupKFold, f1_score, roc_auc_score
+
+# Gradient-Boosted Trees (GPU)
+lightgbm==4.6.0          # device='gpu', gpu_platform_id=0, gpu_device_id=0
+xgboost==3.2.0           # device='cuda', tree_method='hist'
+catboost==1.2.10         # task_type='GPU', devices='0'
+
+# Transformer (OOV action 軸) — PyTorch CUDA 12.1 build
+# 安裝: pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121

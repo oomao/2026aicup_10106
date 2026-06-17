@@ -1,0 +1,25 @@
+{
+  "oof_auc": 0.997372747921405,
+  "overlap_test_auc": 0.7108359888877981,
+  "importance": {
+    "fwd_all_lose": 134800,
+    "fwd_all_win": 128224,
+    "score_diff": 12048,
+    "fwd_gap1": 4447,
+    "delta_next1": 3853,
+    "server_score": 2807,
+    "gap_next1": 2152,
+    "opp_score": 1716,
+    "point_in_game": 1395,
+    "delta_next2": 706,
+    "delta_next3": 665,
+    "delta_prev2": 514,
+    "delta_prev1": 450,
+    "gap_next3": 421,
+    "gap_prev2": 409,
+    "gap_next2": 337,
+    "gap_prev1": 200,
+    "serve_parity": 83,
+    "near_end": 40
+  }
+}

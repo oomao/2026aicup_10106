@@ -1,0 +1,28 @@
+{
+  "oof_auc": 0.994647745983478,
+  "overlap_test_auc": 0.7146528232899865,
+  "n_overlap": 1236,
+  "feats": [
+    "server_score",
+    "opp_score",
+    "point_in_game",
+    "score_diff",
+    "serve_parity",
+    "delta_next",
+    "gap_next",
+    "delta_prev",
+    "gap_prev"
+  ],
+  "importance": {
+    "server_score": 3667,
+    "opp_score": 2370,
+    "point_in_game": 1387,
+    "score_diff": 11271,
+    "serve_parity": 81,
+    "delta_next": 234887,
+    "gap_next": 20295,
+    "delta_prev": 456,
+    "gap_prev": 386
+  },
+  "note": "OOF optimistic (train games complete -> delta_next==label); overlap_test_auc is the honest number. Deterministic score-chain ~0.8205, clean within-rally ML ~0.666."
+}
